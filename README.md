@@ -16,7 +16,7 @@ Ya se encuentra configurador para la cuenta: desarrollo.peru@ratifika.com.pe
 2. Instale las dependencias de NPM dentro de la carpeta generada
 
    ```sh
-    npm install
+    yarn
    ```
 
 ## Environment Variables
@@ -40,12 +40,12 @@ Para correr el proyecto en local ejecute:
  yarn build
 ```
 
-Este comando creará la versión final en la carpeta /build, el contenido de esta carpeta es la única que debe ser enviada a producción
+Este comando creará la versión final en la carpeta /build, debe subirse todo el proyecto sin la carpeta /src (No es necesaria)
 
 2. Para ejecutar el proyecto en PM2 en el servidor de producción, diríjase a la ruta del proyecto y ejecute el comando:
 
 ```sh
- pm2 start index.js
+ pm2 start ./build/index.js
 ```
 
 *NOTA: Puede ejecutar el build sin pm2 usando el comando **yarn start***
