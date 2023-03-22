@@ -1,0 +1,20 @@
+export const validFileAttachmentDefault = [
+  'xml',
+  'zip',
+  'xlsx',
+  'doc',
+  'docx',
+  'pdf',
+  'jpg',
+  'png',
+  'jpeg',
+  'XML',
+  'ZIP',
+  'XLSX',
+  'DOC',
+  'DOCX',
+  'PDF',
+  'JPG',
+  'PNG',
+  'JPEG'
+]
